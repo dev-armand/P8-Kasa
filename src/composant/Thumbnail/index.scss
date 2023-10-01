@@ -1,0 +1,32 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+.thumbnail {
+  position: relative;
+  @include flex;
+  width: 375px;
+  min-width: 350px;
+  height: 150px;
+}
+
+.image {
+  position: relative;
+  object-position: 0% 90%;
+  height: 100%;
+  min-width: 100%;
+  border-radius: 1rem;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+
+.text {
+  position: absolute;
+  font-family: $main-font;
+  top: 0;
+  font-style: normal;
+  font-size: 38px;
+  font-weight: 500;
+  color: $secondary-color;
+  width: 300px;
+}

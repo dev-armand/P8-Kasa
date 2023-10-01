@@ -1,0 +1,40 @@
+@import '../../SASS/utilities/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin: 0 auto;
+  min-width: 375px;
+}
+
+.logo {
+  margin-left: -30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 ;
+  gap: 2rem;
+  /* margin: 0 auto; */
+  color: $primary-color;
+  font-weight: 400;
+  min-width: 20%;
+  margin-right: 2px;
+  font-style: normal;
+  font-size: 24px;
+  font-family: $main-font;
+  & a {
+    text-decoration: none;
+  } & a:visited  {
+    text-decoration: none;
+    color: $primary-color;
+  } & a:hover {
+    text-decoration: underline;
+  }
+}
+
+

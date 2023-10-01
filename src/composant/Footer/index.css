@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  min-height: 150px;
+}
+
+.footerimg {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerp {
+  position: absolute;
+  color: #f7f7f7;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

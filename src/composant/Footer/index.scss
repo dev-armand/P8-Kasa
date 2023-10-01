@@ -1,0 +1,22 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+
+.footer {
+  position: relative;
+  @include flex;
+  background-color: $footer-color;
+  min-height: 150px;
+}
+
+.footerimg {
+  position: relative;
+  @include flex;
+}
+
+.footerp {
+  position: absolute;
+  color: $secondary-color;
+  bottom: 10px;
+  @include flex;
+}
