@@ -1,23 +1,16 @@
-@import '../../SASS/utilities/variables.scss';
-@import '../../SASS/utilities/mixins.scss';
-
-
-
-
-@include forTablet {
+@media (min-width: 768px) {
   .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: $tertiary-color;
+    background: rgba(230, 228, 228, 0.7725490196);
     margin: 4rem 1rem 4rem 1rem;
     border-radius: 10px;
   }
 }
-
-@include forLargeDesktop {
+@media (min-width: 1515px) {
   .cards {
     display: flex;
     justify-content: flex-start;
   }
-}
+}/*# sourceMappingURL=index.css.map */

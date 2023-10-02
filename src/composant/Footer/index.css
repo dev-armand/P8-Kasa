@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  min-height: 150px;
+  min-height: 209px;
 }
 
 .footerimg {
@@ -19,9 +19,19 @@
 .footerp {
   position: absolute;
   color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
   bottom: 10px;
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-left: 2rem;
+}
+
+@media (min-width: 376px) {
+  .footerp {
+    width: 300px;
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

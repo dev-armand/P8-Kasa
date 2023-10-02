@@ -1,0 +1,31 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+@import '../../SASS/base/typography';
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 335px;
+  height: 300px;
+  background:$linear-cards;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.cardContainer {
+  @include flex;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  font-family: $main-font;
+}
+
+.cardTitle {
+  margin: 1rem;
+  width: 5rem;
+  color: $secondary-color;
+}

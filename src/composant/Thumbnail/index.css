@@ -4,29 +4,66 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 375px;
-  min-width: 350px;
-  height: 150px;
+  min-width: 335px;
+  height: 120px;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
   position: relative;
-  -o-object-position: 0% 90%;
-     object-position: 0% 90%;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 100%;
   border-radius: 1rem;
   background-size: cover;
   margin-bottom: 2rem;
+  filter: brightness(60%);
 }
 
 .text {
   position: absolute;
   font-family: "Montserrat", sans-serif;
-  top: 0;
+  top: 10;
+  left: 0;
   font-style: normal;
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 300;
   color: #f7f7f7;
-  width: 300px;
+  width: 200px;
+}
+
+@media (min-width: 376px) {
+  .text {
+    min-width: 400px;
+  }
+}
+@media (min-width: 480px) {
+  .text {
+    min-width: 400px;
+    left: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .thumbnail {
+    height: 140px;
+  }
+  .text {
+    font-size: 26px;
+    min-width: 400px;
+    left: 25%;
+  }
+}
+@media (min-width: 1024px) {
+  .thumbnail {
+    height: 160px;
+  }
+  .text {
+    font-size: 32px;
+    min-width: 500px;
+    left: 30%;
+  }
 }/*# sourceMappingURL=index.css.map */

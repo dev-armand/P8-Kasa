@@ -5,7 +5,7 @@ function Thumbnail() {
   return(
     <div className="thumbnail">
       <img src={image1} alt="paysage" className="image"></img>
-      <h2 className="text">Chez vous, partout et ailleurs</h2>
+      <p className="text">Chez vous, partout et ailleurs</p>
     </div>
   )
 }

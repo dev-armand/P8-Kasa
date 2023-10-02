@@ -7,7 +7,7 @@ function Body() {
     
     <div>
       <Thumbnail />
-      <div>
+      <div className="cards">
       <Card />
       <Card />
       <Card />

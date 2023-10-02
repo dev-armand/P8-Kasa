@@ -1,0 +1,72 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.imageError {
+  position: relative;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100px;
+  width: 200px;
+}
+
+.oups, .retour {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+}
+
+.oups {
+  font-size: 23px;
+  width: 260px;
+}
+
+.retour {
+  text-decoration: underline;
+  color: #ff6060;
+  font-size: 14px;
+  width: 220px;
+}
+
+@media (min-width: 768px) {
+  .imageError {
+    height: 180px;
+    width: 400px;
+  }
+  .imageErrorContainer {
+    height: 260px;
+    width: 400px;
+  }
+  .oups {
+    width: 500px;
+  }
+  .containerError {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .imageError {
+    height: 260px;
+    width: 600px;
+  }
+  .imageErrorContainer {
+    height: 260px;
+    width: 600px;
+  }
+  .oups {
+    width: 800px;
+    font-size: 36px;
+  }
+  .containerError {
+    height: 500px;
+  }
+}/*# sourceMappingURL=index.css.map */

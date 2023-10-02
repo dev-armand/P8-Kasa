@@ -6,7 +6,7 @@
   position: relative;
   @include flex;
   background-color: $footer-color;
-  min-height: 150px;
+  min-height: 209px;
 }
 
 .footerimg {
@@ -17,6 +17,16 @@
 .footerp {
   position: absolute;
   color: $secondary-color;
+  font-family: $main-font;
   bottom: 10px;
+  width: 150px;
   @include flex;
+  padding-left: 2rem;
+}
+
+@include forMobile {
+  .footerp {
+    width: 300px;
+    padding-left: 0;
+  }
 }

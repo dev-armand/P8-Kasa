@@ -4,28 +4,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
-  margin: 0 auto;
-  min-width: 375px;
+  min-width: 335px;
+  margin: 1rem;
 }
 
 .logo {
-  margin-left: -30px;
+  width: 170px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 ;
   gap: 2rem;
-  /* margin: 0 auto; */
   color: $primary-color;
   font-weight: 400;
-  min-width: 20%;
-  margin-right: 2px;
-  font-style: normal;
-  font-size: 24px;
+  font-size: 12px;
   font-family: $main-font;
   & a {
     text-decoration: none;

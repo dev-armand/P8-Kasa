@@ -6,7 +6,31 @@
 }
 
 @mixin forMobile {
-  @media (min-width:375px){
+  @media (min-width:376px){
+    @content;
+  }
+}
+
+@mixin forLargeMobile {
+  @media (min-width:480px){
+    @content;
+  }
+}
+
+@mixin forTablet {
+  @media (min-width:768px){
+    @content;
+  }
+}
+
+@mixin forDesktop {
+  @media (min-width:1024px){
+    @content;
+  }
+}
+
+@mixin forLargeDesktop {
+  @media (min-width:1515px){
     @content;
   }
 }
