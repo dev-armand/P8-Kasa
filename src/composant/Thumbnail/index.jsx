@@ -1,13 +1,15 @@
-import image1 from  "../../assets/image1.png";
+import React from 'react';
 import './index.scss';
 
-function Thumbnail() {
-  return(
+function Thumbnail(props) {
+  const { imageUrl, text } = props;
+
+  return (
     <div className="thumbnail">
-      <img src={image1} alt="paysage" className="image"></img>
-      <p className="text">Chez vous, partout et ailleurs</p>
+      <img src={imageUrl} alt="paysage" className="image" />
+      <p className="text">{text}</p>
     </div>
-  )
+  );
 }
 
 export default Thumbnail

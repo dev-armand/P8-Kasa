@@ -1,0 +1,40 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+.colapseContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.colapseBar {
+  width: 335px;
+  height: 50px;
+  background:$primary-color ;
+  color: $secondary-color;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colapseArrow {
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.colapseTitle {
+  margin-left: 1rem;
+}
+
+.colapseTextContainer {
+  width: 335px;
+  height: 300px;
+  background: $tertiary-color;
+  border-radius: 0 0 10px 10px;
+}
+
+.colapseText {
+  margin: 1rem;
+  color: $primary-color;
+}
+
