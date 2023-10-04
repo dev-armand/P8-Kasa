@@ -1,0 +1,10 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+.checked {
+  color: $primary-color;
+}
+
+.notChecked {
+  color: $tertiary-color;
+}

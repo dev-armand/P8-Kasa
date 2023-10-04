@@ -1,7 +1,9 @@
-function TagName() {
+import "./index.scss"
+function TagName(props) {
+  const { tagText} = props;
   return(
-    <div>
-      <p>tag-name</p>
+    <div className="tagContainer">
+      <p className="tagText">{tagText} </p>
     </div>
   )
 }

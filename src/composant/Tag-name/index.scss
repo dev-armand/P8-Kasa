@@ -1,0 +1,14 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+.tagContainer {
+@include flex;
+background: $primary-color;
+color: $secondary-color;
+font-family: $main-font;
+width: 85px;
+height: 22px;
+border-radius: 5px;
+font-size: small;
+}
+

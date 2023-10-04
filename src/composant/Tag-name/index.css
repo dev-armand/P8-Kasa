@@ -1,0 +1,13 @@
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ff6060;
+  color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 22px;
+  border-radius: 5px;
+  font-size: small;
+}/*# sourceMappingURL=index.css.map */

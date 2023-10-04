@@ -21,7 +21,7 @@ function ColapseBar(props) {
         <img
           className='colapseArrow'
           src={vectorHaut}
-          alt="vector bas"
+          alt="flèche haute"
           style={{ transform: `rotate(${rotationAngle}deg)` }} // Apply rotation based on the angle
         />
       </div>

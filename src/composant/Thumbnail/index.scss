@@ -34,6 +34,7 @@
   font-weight: 300;
   color: $secondary-color;
   width: 200px;
+  margin-left: 1rem;
 }
 
 @include forMobile {
@@ -45,7 +46,9 @@
 @include forLargeMobile {
   .text {
     min-width: 400px;
-    left: 10%;
+    top: initial;
+    left: initial;
+    text-align: center;
   }
 }
 
@@ -57,7 +60,6 @@
   .text {
     font-size: 26px;
     min-width: 400px;
-    left: 25%;
   }
 }
 
@@ -69,6 +71,5 @@
   .text {
     font-size: 32px;
     min-width: 500px;
-    left: 30%;
   }
 }
