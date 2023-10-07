@@ -30,7 +30,7 @@
 }
 .profileName {
   color: $primary-color;
-  width: 80px;
+  margin-right: 1rem;
 }
 
 .profilePicture {
@@ -42,4 +42,28 @@
 .profilePictureContainer {
   display: flex;
   align-items: center;
+}
+
+.starsContainer {
+  display: flex;
+}
+
+.containerBody {
+  margin: 1rem;
+}
+
+@include forTablet {
+  .colapseContain {
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+
+  .colapseItem {
+    flex-basis: calc(50% - 16px);
+    margin-right: 16px; 
+  }
+
+  .containerBody {
+    margin: 1rem 5rem 2rem 5rem;
+  }
 }

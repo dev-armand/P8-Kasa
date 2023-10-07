@@ -4,7 +4,7 @@ import Footer from "../../composant/Footer";
 
 function Home() {
   return(
-    <div>
+    <div className="marginAdjust">
       <Header />
       <Body />
       <Footer />

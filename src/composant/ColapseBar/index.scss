@@ -8,7 +8,7 @@
 }
 
 .colapseBar {
-  min-width: 335px;
+  width: 100%;
   height: 50px;
   background:$primary-color ;
   color: $secondary-color;
@@ -28,7 +28,7 @@
 }
 
 .colapseTextContainer {
-  min-width: 335px;
+  width: 100%;
   height: 200px;
   background: $tertiary-color;
   border-radius: 0 0 10px 10px;
@@ -43,5 +43,6 @@
 
 .colapseTextContainer.collapsed {
   max-height: 0; /* Collapse the container by setting max-height to 0 */
+  display: none;
 }
 

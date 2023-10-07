@@ -3,8 +3,28 @@
 
 
 
+@include forMobile {
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4rem 1rem 4rem 1rem;
+    border-radius: 10px;
+  }
+}
 
-@include forTablet {
+@include forLargeMobile {
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $tertiary-color;
+    margin: 4rem 1rem 4rem 1rem;
+    border-radius: 10px;
+  }
+}
+
+@include forDesktop {
   .cards {
     display: flex;
     justify-content: center;
@@ -17,7 +37,9 @@
 
 @include forLargeDesktop {
   .cards {
-    display: flex;
-    justify-content: flex-start;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 50px; 
+    padding: 50px 50px;
   }
 }

@@ -9,15 +9,12 @@ import { NavLink } from "react-router-dom";
 function Body() { 
 
   return (
-    <div>
+    <div className="containerBody">
       <Banner imageUrl={image1} text="Chez vous, partout et ailleurs" />
       <div className="cards">
         {ListeLogements.map((logement) => (
           <NavLink key={logement.id} to={"/logement/"+logement.id+"/#"}>
-            
               <Card key={logement.id} id={logement.id} cover={logement.cover} title={logement.title}  />
-    
-           
           </NavLink>
         ))}
       </div>

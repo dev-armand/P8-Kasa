@@ -1,6 +1,7 @@
 import "./index.scss"
-function TagName(props) {
-  const { tagText} = props;
+import React from "react";
+
+function TagName({tagText}) {
   return(
     <div className="tagContainer">
       <p className="tagText">{tagText} </p>

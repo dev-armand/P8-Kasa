@@ -1,10 +1,11 @@
 import Header from "../../composant/Header";
 import Body from "../../composant/Body-Logements";
 import Footer from "../../composant/Footer";
+import "./index.scss"
 
 function Logement() {
   return(
-    <div>
+    <div className="marginAdjust">
       <Header />
       <Body />
       <Footer />

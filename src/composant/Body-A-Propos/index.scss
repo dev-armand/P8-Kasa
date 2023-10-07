@@ -1,0 +1,8 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+@include forDesktop {
+  .colapseBody{
+    margin:4rem;
+   }
+}
