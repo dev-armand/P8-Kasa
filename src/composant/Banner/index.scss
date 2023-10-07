@@ -1,9 +1,9 @@
-.thumbnail {
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
+.banner {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   min-width: 335px;
   height: 120px;
   overflow: hidden;
@@ -15,8 +15,7 @@
 
 .image {
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-width: 100%;
   border-radius: 1rem;
   background-size: cover;
@@ -24,25 +23,27 @@
   filter: brightness(60%);
 }
 
+
 .text {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-font;
   top: 10;
   left: 0;
   font-style: normal;
   font-size: 24px;
   font-weight: 300;
-  color: #f7f7f7;
+  color: $secondary-color;
   width: 200px;
   margin-left: 1rem;
 }
 
-@media (min-width: 376px) {
+@include forMobile {
   .text {
     min-width: 400px;
   }
 }
-@media (min-width: 480px) {
+
+@include forLargeMobile {
   .text {
     min-width: 400px;
     top: initial;
@@ -50,21 +51,25 @@
     text-align: center;
   }
 }
-@media (min-width: 768px) {
-  .thumbnail {
+
+@include forTablet {
+  .banner {
     height: 140px;
   }
+
   .text {
     font-size: 26px;
     min-width: 400px;
   }
 }
-@media (min-width: 1024px) {
-  .thumbnail {
+
+@include forDesktop {
+  .banner {
     height: 160px;
   }
+
   .text {
     font-size: 32px;
     min-width: 500px;
   }
-}/*# sourceMappingURL=index.css.map */
+}

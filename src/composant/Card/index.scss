@@ -4,18 +4,21 @@
 
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   width: 335px;
   height: 300px;
-  background:$linear-cards;
   margin: 1rem;
   border-radius: 10px;
+  filter: brightness(75%);
 }
 
 .cardContainer {
-  @include flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 a {
@@ -25,7 +28,20 @@ a {
 }
 
 .cardTitle {
-  margin: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
   width: 5rem;
   color: $secondary-color;
+  z-index: 1;
+  width: 300px;
+  height: 50px;
+  font-family: $main-font;
+  font-size: large;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: saturate(100%);
 }

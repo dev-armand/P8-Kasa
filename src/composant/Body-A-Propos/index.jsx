@@ -1,5 +1,5 @@
 
-import Thumbnail from "../Thumbnail";
+import Thumbnail from "../Banner";
 import React from "react";
 import image2 from  "../../assets/image2.png";
 import ColapseBar from "../ColapseBar";

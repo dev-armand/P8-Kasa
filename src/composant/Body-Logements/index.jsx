@@ -8,7 +8,7 @@ function Body() {
   return(
     <div>
       <div className="carousel">
-
+      
       </div>
       <div className="logementTitleContainer">
         <h2 className="logementTitle">Paris center, on the romantic Canal Saint-Martin</h2>
@@ -26,8 +26,8 @@ function Body() {
         <img className="profilePicture" src={alexandreDumas} alt=" de profile" />
         </div>
       </div>
-      <ColapseBar colapseTitle={"Description"} />
-      <ColapseBar colapseTitle={"Equipements"} />
+      <ColapseBar colapseTitle={"Description"} colapseText={"Ton texte viendra ici."} />
+      <ColapseBar colapseTitle={"Equipements"} colapseText={"Ton texte viendra ici."} />
     </div>
   )
 }

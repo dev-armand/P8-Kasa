@@ -3,7 +3,7 @@ import './index.scss';
 import vectorHaut from  "../../assets/vectorHaut.svg";
 
 function ColapseBar(props) {
-  const { colapseTitle, colapsetext } = props;
+  const { colapseTitle, colapseText } = props;
 
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [rotationAngle, setRotationAngle] = useState(0); // Initial angle is 0 degrees
@@ -26,7 +26,7 @@ function ColapseBar(props) {
         />
       </div>
       <div className={`colapseTextContainer ${isCollapsed ? 'collapsed' : ''}`}>
-        <p className='colapseText'> {colapsetext}</p>
+        <p className='colapseText'> {colapseText}</p>
       </div>
     </div>
   );
