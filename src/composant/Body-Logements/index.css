@@ -28,7 +28,7 @@
 
 .profileName {
   color: #ff6060;
-  width: 80px;
+  margin-right: 1rem;
 }
 
 .profilePicture {
@@ -40,4 +40,26 @@
 .profilePictureContainer {
   display: flex;
   align-items: center;
+}
+
+.starsContainer {
+  display: flex;
+}
+
+.containerBody {
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .colapseContain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colapseItem {
+    flex-basis: calc(50% - 16px);
+    margin-right: 16px;
+  }
+  .containerBody {
+    margin: 1rem 5rem 2rem 5rem;
+  }
 }/*# sourceMappingURL=index.css.map */

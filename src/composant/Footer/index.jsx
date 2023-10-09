@@ -1,6 +1,6 @@
 import './index.scss';
-
 import Logo from  "../../assets/logoFooter.png";
+
 function Footer() {
   return (
     <footer className='footer'>

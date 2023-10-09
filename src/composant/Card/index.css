@@ -3,21 +3,21 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   width: 335px;
   height: 300px;
-  background: linear-gradient(#ff6060, rgb(138, 46, 46));
   margin: 1rem;
   border-radius: 10px;
+  filter: brightness(75%);
 }
 
 .cardContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 a {
@@ -27,7 +27,20 @@ a {
 }
 
 .cardTitle {
-  margin: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
   width: 5rem;
   color: #f7f7f7;
+  z-index: 1;
+  width: 300px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: saturate(100%);
 }/*# sourceMappingURL=index.css.map */

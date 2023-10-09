@@ -1,3 +1,6 @@
+@import '../../SASS/utilities/variables.scss';
+@import '../../SASS/utilities/mixins.scss';
+
 .carrousel {
   display: block;
   height: 415px;
@@ -19,7 +22,7 @@
 .fleche-gauche {
   margin-left: 25px;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) ;
 }
 .fleche-droite {
   margin-right: 25px;
@@ -39,7 +42,7 @@
   display: block;
 }
 
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 768px) {
   .carrousel {
       height: 255px;
       margin: auto auto 15px auto;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./index.scss";
-import fleche from "../../assets/vectorDroite.svg";
+import flecheDroite from "../../assets/vectorDroite.svg";
+import flecheGauche from "../../assets/vectorGauche.svg";
 
 function Carrousel({images}) {
-    /* Crée un Hook d'état */
     let [imgAfficher, changerImg] = useState(0);
     let nombreImg = images.length;
 
@@ -28,7 +28,7 @@ function Carrousel({images}) {
     return(
         <div className="carrousel">
             {
-                nombreImg > 1 && <img className="fleche fleche-gauche" src={fleche} alt="Contenu précedént" onClick={imgPrecedente}/>
+                nombreImg > 1 && <img className="fleche fleche-gauche" src={flecheGauche} alt="Contenu précedént" onClick={imgPrecedente}/>
             }
             {
                 images.map((image, index) => {
@@ -38,7 +38,7 @@ function Carrousel({images}) {
                 })
             }
             {
-                nombreImg > 1 && <img className="fleche fleche-droite" src={fleche} alt="Contenu suivant" onClick={imgSuivante}/>
+                nombreImg > 1 && <img className="fleche fleche-droite" src={flecheDroite} alt="Contenu suivant" onClick={imgSuivante}/>
             }
         </div>
     );
