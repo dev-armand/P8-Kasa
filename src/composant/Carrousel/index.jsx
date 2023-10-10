@@ -4,42 +4,30 @@ import flecheDroite from "../../assets/vectorDroite.svg";
 import flecheGauche from "../../assets/vectorGauche.svg";
 
 function Carrousel({images}) {
-    let [imgAfficher, changerImg] = useState(0);
-    let nombreImg = images.length;
+    let [current, setCurrent] = useState(0);
+    const length  = images.length;
 
-    const imgPrecedente = () => {
-        if(imgAfficher === 0) {
-            changerImg(nombreImg - 1);
-        } else {
-            changerImg(imgAfficher - 1);
-        }
-        return(changerImg);
-    };  
-
-    const imgSuivante = () => {
-        if(imgAfficher === nombreImg - 1) {
-            changerImg(nombreImg = 0);
-        } else {
-            changerImg(imgAfficher + 1);
-        }
-        return(changerImg);
-    };
+    const nextSlide = () => {
+		setCurrent(current === length - 1 ? 0 : current + 1); // return on first slide when on the last slide 
+	};
+	const prevSlide = () => {
+		setCurrent(current === 0 ? length - 1 : current - 1); // returnon on last slide when on the first slide
+	};
 
     return(
         <div className="carrousel">
-            {
-                nombreImg > 1 && <img className="fleche fleche-gauche" src={flecheGauche} alt="Contenu précedént" onClick={imgPrecedente}/>
-            }
-            {
-                images.map((image, index) => {
-                    return(
-                        <img key={index} className={index === imgAfficher ? 'carrousel-img actif' : 'carrousel-img'} src={image} alt="Logement"/>
-                    )
-                })
-            }
-            {
-                nombreImg > 1 && <img className="fleche fleche-droite" src={flecheDroite} alt="Contenu suivant" onClick={imgSuivante}/>
-            }
+            {images.map((image, index) => {
+                return(
+                    <img key={index} className={index === current ? 'carrousel-img actif' : 'carrousel-img'} src={image} alt="Logement"/>
+                )
+            })}
+            
+            {/*If there's only one image or no images at all, the arrows won't be displayed*/}
+            {length > 1 && <img className="fleche fleche-gauche" src={flecheGauche} alt="Contenu précedént" onClick={prevSlide}/>}
+            {length > 1 && <img className="fleche fleche-droite" src={flecheDroite} alt="Contenu suivant" onClick={nextSlide}/>}
+            <span className="carrouselNumber">
+                {current + 1}/{length}
+            </span>
         </div>
     );
 }

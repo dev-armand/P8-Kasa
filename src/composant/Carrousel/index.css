@@ -60,4 +60,17 @@
   .carrousel-img {
     height: 255px;
   }
+}
+.carrouselNumber {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .carrouselNumber {
+    display: block;
+    position: absolute;
+    color: #f7f7f7;
+    font-size: large;
+    left: 48%;
+    top: 86%;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -2,7 +2,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.containerError {
+.error {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   margin-bottom: 6rem;
 }
 
-.imageError {
+.error__image {
   position: relative;
   -o-object-fit: fill;
      object-fit: fill;
@@ -20,17 +20,17 @@
   width: 200px;
 }
 
-.oups, .retour {
+.error__text, .error__link {
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
 }
 
-.oups {
+.error__text {
   font-size: 23px;
   width: 260px;
 }
 
-.retour {
+.error__link {
   text-decoration: underline;
   color: #ff6060;
   font-size: 14px;
@@ -38,35 +38,35 @@
 }
 
 @media (min-width: 768px) {
-  .imageError {
+  .error__image {
     height: 180px;
     width: 400px;
   }
-  .imageErrorContainer {
+  .error__image_container {
     height: 260px;
     width: 400px;
   }
-  .oups {
+  .error__text {
     width: 500px;
   }
-  .containerError {
+  .error {
     height: 500px;
   }
 }
 @media (min-width: 1024px) {
-  .imageError {
+  .error__image {
     height: 260px;
     width: 600px;
   }
-  .imageErrorContainer {
+  .error__image_container {
     height: 260px;
     width: 600px;
   }
-  .oups {
+  .error__text {
     width: 800px;
     font-size: 36px;
   }
-  .containerError {
+  .error {
     height: 500px;
   }
 }/*# sourceMappingURL=index.css.map */

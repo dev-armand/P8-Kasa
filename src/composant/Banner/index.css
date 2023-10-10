@@ -13,7 +13,8 @@
   justify-content: center;
 }
 
-.image {
+/* Element */
+.banner__image {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -24,7 +25,8 @@
   filter: brightness(60%);
 }
 
-.text {
+/* Element */
+.banner__text {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   top: 10;
@@ -37,33 +39,37 @@
   margin-left: 1rem;
 }
 
+/* Modifier for mobile */
 @media (min-width: 376px) {
-  .text {
+  .banner__text {
     min-width: 400px;
   }
 }
+/* Modifier for large mobile */
 @media (min-width: 480px) {
-  .text {
+  .banner__text {
     min-width: 400px;
     top: initial;
     left: initial;
     text-align: center;
   }
 }
+/* Modifier for tablet */
 @media (min-width: 768px) {
   .banner {
     height: 140px;
   }
-  .text {
+  .banner__text {
     font-size: 26px;
     min-width: 400px;
   }
 }
+/* Modifier for desktop */
 @media (min-width: 1024px) {
   .banner {
     height: 200px;
   }
-  .text {
+  .banner__text {
     font-size: 32px;
     min-width: 500px;
   }

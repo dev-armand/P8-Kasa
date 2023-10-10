@@ -1,8 +1,6 @@
 @import '../../SASS/utilities/variables.scss';
 @import '../../SASS/utilities/mixins.scss';
 
-
-
 @include forMobile {
   .cards {
     display: flex;
@@ -25,7 +23,7 @@
 }
 
 @include forDesktop {
-  .cards {
+  .body__cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -36,7 +34,7 @@
 }
 
 @include forLargeDesktop {
-  .cards {
+  .body__cards {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 50px; 

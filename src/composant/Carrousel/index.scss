@@ -14,6 +14,7 @@
   width: 45px;
   z-index: 1;
 }
+
 .fleche:hover {
   cursor: pointer;
   filter: drop-shadow(2px 4px 6px black);
@@ -24,6 +25,7 @@
   top: 50%;
   transform: translateY(-50%) ;
 }
+
 .fleche-droite {
   margin-right: 25px;
   right: 0;
@@ -38,6 +40,7 @@
   display: none;
   width: 100%
 }
+
 .carrousel-img.actif {
   display: block;
 }
@@ -64,3 +67,15 @@
   }
 }
 
+.carrouselNumber {
+  display: none;
+
+  @include forDesktop {
+      display: block;
+      position: absolute;
+      color: $secondary-color;
+      font-size: large;
+      left: 48%;
+      top: 86%;
+  }
+}

@@ -2,8 +2,13 @@
 @import '../../SASS/utilities/mixins.scss';
 @import '../../SASS/base/typography';
 
-
 .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card__image {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -15,19 +20,7 @@
   filter: brightness(75%);
 }
 
-.cardContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-a {
-  color: $secondary-color;
-  text-decoration: none;
-  font-family: $main-font;
-}
-
-.cardTitle {
+.card__title {
   position: absolute;
   display: flex;
   align-items: center;
@@ -41,7 +34,7 @@ a {
   font-size: large;
 }
 
-.card:hover {
+.card__image:hover {
   cursor: pointer;
   filter: saturate(100%);
 }

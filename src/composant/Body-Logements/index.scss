@@ -1,69 +1,70 @@
 @import '../../SASS/utilities/variables.scss';
 @import '../../SASS/utilities/mixins.scss';
 
-.tagNameContainer {
+.logement {
+  margin: 1rem;
+}
+
+.logement__title-container {
+  margin: 1rem;
+}
+
+.logement__title {
+  color: $primary-color;
+  font-weight: 300;
+}
+
+.logement__localisation {
+  color: $primary-color;
+  font-weight: 300;
+}
+
+.logement__tag {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   margin: 1rem;
 }
 
-.logementTitle {
-  color: $primary-color;
-  font-weight: 300;
-}
-
-.logementTitleContainer {
-  margin: 1rem;
-}
-
-.logementLocalisation {
-  color: $primary-color;
-  font-weight: 300;
-}
-
-.ratingContainer {
+.logement__rating-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1rem;
 }
-.profileName {
+
+.logement__stars {
+  display: flex;
+}
+
+.logement__host-container {
+  display: flex;
+  align-items: center;
+}
+
+.logement__host-name {
   color: $primary-color;
   margin-right: 1rem;
 }
 
-.profilePicture {
+.logement__host-profile-pic {
   height: 50px;
   width: 50px;
   border-radius: 50px;
 }
 
-.profilePictureContainer {
-  display: flex;
-  align-items: center;
-}
-
-.starsContainer {
-  display: flex;
-}
-
-.containerBody {
-  margin: 1rem;
-}
-
 @include forTablet {
-  .colapseContain {
+  .logement__colapse {
     display: flex; 
     flex-wrap: wrap; 
   }
 
-  .colapseItem {
+  .logement__colapse-item {
     flex-basis: calc(50% - 16px);
     margin-right: 16px; 
   }
 
-  .containerBody {
+  .logement {
     margin: 1rem 5rem 2rem 5rem;
   }
 }

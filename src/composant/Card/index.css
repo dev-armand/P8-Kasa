@@ -3,6 +3,12 @@
 }
 
 .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card__image {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -14,19 +20,7 @@
   filter: brightness(75%);
 }
 
-.cardContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-a {
-  color: #f7f7f7;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.cardTitle {
+.card__title {
   position: absolute;
   display: flex;
   align-items: center;
@@ -40,7 +34,7 @@ a {
   font-size: large;
 }
 
-.card:hover {
+.card__image:hover {
   cursor: pointer;
   filter: saturate(100%);
 }/*# sourceMappingURL=index.css.map */

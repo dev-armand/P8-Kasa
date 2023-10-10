@@ -3,13 +3,12 @@ import './index.scss';
 
 function Banner(props) {
   const { imageUrl, text } = props;
-
   return (
     <div className="banner">
-      <img src={imageUrl} alt="paysage" className="image" />
-      <p className="text">{text}</p>
+      <img src={imageUrl} alt="paysage" className="banner__image" />
+      <p className="banner__text">{text}</p>
     </div>
   );
 }
 
-export default Banner
+export default Banner;

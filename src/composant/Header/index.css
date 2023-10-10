@@ -6,11 +6,11 @@
   margin: 1rem;
 }
 
-.logo {
+.header__logo {
   width: 170px;
 }
 
-.navbar {
+.header__navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,14 +20,14 @@
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
-.navbar a {
+.header__navbar a {
   text-decoration: none;
 }
-.navbar a:visited {
+.header__navbar a:visited {
   text-decoration: none;
   color: #ff6060;
 }
-.navbar a:hover {
+.header__navbar a:hover {
   text-decoration: underline;
 }
 

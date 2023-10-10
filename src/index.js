@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Logement from './pages/Logements';
 import FourOFour from './pages/error404';
 import APropos from './pages/APropos';
+import "font-awesome/css/font-awesome.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

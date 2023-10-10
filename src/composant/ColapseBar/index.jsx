@@ -15,18 +15,18 @@ function ColapseBar(props) {
   };
 
   return (
-    <div className='colapseContainer'>
-      <div className='colapseBar' onClick={handleCollapseToggle}>
-        <p className='colapseTitle'>{colapseTitle}</p>
+    <div className='colapse'>
+      <div className='colapse__bar' onClick={handleCollapseToggle}>
+        <p className='colapse__title'>{colapseTitle}</p>
         <img
-          className='colapseArrow'
+          className='colapse__arrow'
           src={vectorHaut}
           alt="flèche haute"
           style={{ transform: `rotate(${rotationAngle}deg)` }} // Apply rotation based on the angle
         />
       </div>
-      <div className={`colapseTextContainer ${isCollapsed ? 'collapsed' : ''}`}>
-        <p className='colapseText'> {colapseText}</p>
+      <div className={`colapse__text-container ${isCollapsed ? 'collapsed' : ''}`}>
+        <p className='colapse__text'> {colapseText}</p>
       </div>
     </div>
   );

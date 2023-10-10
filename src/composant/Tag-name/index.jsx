@@ -3,8 +3,8 @@ import React from "react";
 
 function TagName({tagText}) {
   return(
-    <div className="tagContainer">
-      <p className="tagText">{tagText} </p>
+    <div className="tag">
+      <p className="tag__text">{tagText} </p>
     </div>
   )
 }

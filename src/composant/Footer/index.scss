@@ -1,7 +1,6 @@
 @import '../../SASS/utilities/variables.scss';
 @import '../../SASS/utilities/mixins.scss';
 
-
 .footer {
   position: relative;
   @include flex;
@@ -9,12 +8,12 @@
   min-height: 209px;
 }
 
-.footerimg {
+.footer__img {
   position: relative;
   @include flex;
 }
 
-.footerp {
+.footer__p {
   position: absolute;
   color: $secondary-color;
   font-family: $main-font;
@@ -25,7 +24,7 @@
 }
 
 @include forMobile {
-  .footerp {
+  .footer__p {
     width: 300px;
     padding-left: 0;
   }

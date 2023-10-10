@@ -13,7 +13,8 @@
   justify-content: center;
 }
 
-.image {
+/* Element */
+.banner__image {
   position: relative;
   object-fit: cover;
   min-width: 100%;
@@ -23,8 +24,8 @@
   filter: brightness(60%);
 }
 
-
-.text {
+/* Element */
+.banner__text {
   position: absolute;
   font-family: $main-font;
   top: 10;
@@ -37,14 +38,16 @@
   margin-left: 1rem;
 }
 
+/* Modifier for mobile */
 @include forMobile {
-  .text {
+  .banner__text {
     min-width: 400px;
   }
 }
 
+/* Modifier for large mobile */
 @include forLargeMobile {
-  .text {
+  .banner__text {
     min-width: 400px;
     top: initial;
     left: initial;
@@ -52,23 +55,25 @@
   }
 }
 
+/* Modifier for tablet */
 @include forTablet {
   .banner {
     height: 140px;
   }
 
-  .text {
+  .banner__text {
     font-size: 26px;
     min-width: 400px;
   }
 }
 
+/* Modifier for desktop */
 @include forDesktop {
   .banner {
     height: 200px;
   }
 
-  .text {
+  .banner__text {
     font-size: 32px;
     min-width: 500px;
   }

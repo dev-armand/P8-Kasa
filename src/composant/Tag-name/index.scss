@@ -1,7 +1,7 @@
 @import '../../SASS/utilities/variables.scss';
 @import '../../SASS/utilities/mixins.scss';
 
-.tagContainer {
+.tag {
 @include flex;
 background: $primary-color;
 color: $secondary-color;
@@ -12,10 +12,8 @@ border-radius: 5px;
 font-size: small;
 }
 
-
-
 @include forTablet {
-  .tagContainer{
+  .tag{
     width: 200px;
   }
 }
