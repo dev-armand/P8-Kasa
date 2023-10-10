@@ -9,27 +9,24 @@
     margin: 4rem 1rem 4rem 1rem;
     border-radius: 10px;
   }
-}
-
-@include forLargeMobile {
-  .cards {
+  .body__cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: $tertiary-color;
     margin: 4rem 1rem 4rem 1rem;
     border-radius: 10px;
   }
 }
 
-@include forDesktop {
+@include forTablet {
   .body__cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     background: $tertiary-color;
-    margin: 4rem 1rem 4rem 1rem;
-    border-radius: 10px;
+  }
+}
+
+@include forDesktop {
+  .body {
+    margin: 1rem 5rem 5rem 5rem ;
   }
 }
 
