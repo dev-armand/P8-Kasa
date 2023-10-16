@@ -14,7 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route index element={<Home />} /> 
-        <Route path='https://dev-armand.github.io/kasa' element={<Home />} /> 
+        <Route path='/dev-armand.github.io/kasa' element={<Home />} /> 
         <Route path='/Home' element={<Home />} /> 
         <Route path='/logement/:id' element={<Logement />} />
         <Route path='/APropos' element={<APropos />} />
