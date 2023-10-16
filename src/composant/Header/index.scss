@@ -7,6 +7,9 @@
   justify-content: space-between;
   min-width: 335px;
   margin: 1rem;
+  &__desktop {
+    display: none;
+  }
 }
 
 .header__logo {
@@ -22,13 +25,12 @@
   font-weight: 400;
   font-size: 14px;
   font-family: $main-font;
-  & a {
-    text-decoration: none;
-  } & a:visited  {
-    text-decoration: none;
-    color: $primary-color;
-  } & a:hover {
+  & a.active {
     text-decoration: underline;
+  }
+  & a{
+    color: $primary-color;
+    text-decoration: none;
   }
 }
 
@@ -36,5 +38,16 @@
  .header {
   margin: 2rem 5rem 2rem 5rem ;
  }
+}
+
+@include forDesktop {
+  .header__desktop {
+    display: block;
+    font-size: large;
+  }
+
+  .header__mobile {
+    display: none;
+  }
 }
 
